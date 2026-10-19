@@ -1,6 +1,6 @@
 node_modules/
 dist/
-.env
+*.tsbuildinfo
 *.local
 .DS_Store
 *.log
@@ -15,3 +15,9 @@ playwright/.cache/
 
 # Local scripts
 create_issues.py
+
+# Playwright — ignore generated reports and test output, but keep snapshots
+playwright-report/
+test-results/
+# e2e/snapshots/ is intentionally NOT ignored — baselines are committed
+config.bat
